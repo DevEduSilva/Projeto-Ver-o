@@ -1,0 +1,96 @@
+/* --------------------- Reset básico ---------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #222;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/*--------------------- Header --------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 5px;
+  color: #222;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+#lista-exercicios {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.exercicio {
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercicio:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.exercicio-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.exercicio-img {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.exercicio-img:hover {
+  background-color: #ececec;
+}
+
+.exercicio-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+}

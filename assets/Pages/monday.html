@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tela do Exercício</title>
+    <link rel="stylesheet" href="../css/exercise.css">
+    <link rel="stylesheet" href="../css/popup.css">
+
+</head>
+
+<body>
+
+    <header>
+        <span onclick="window.location.href='../../index.html'">☰</span>
+    </header>
+
+    <div class="titulo">SEGUNDA-FEIRA</div>
+    <div class="subtitulo">BRAÇO</div>
+
+    <div id="lista-exercicios">
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+        <div class="exercicio">
+            <div class="exercicio-header">
+                <span>NOME DO EXERCÍCIO</span>
+                <span style="color:red; cursor:pointer;" onclick="abrirPopup()">FAZER</span>
+            </div>
+            <div class="exercicio-img" onclick="abrirPopup()">Clique para ver</div>
+            <div class="exercicio-footer">
+                <span>QTD x SÉRIES</span>
+                <span>PESO ATUAL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up -->
+    <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
+    <div class="popup" id="popup">
+        <h3>VER COMO É FEITO O EXERCÍCIO AQUI!</h3>
+        <p>FEZ O EXERCÍCIO?</p>
+        <button class="btn-sim" onclick="fecharPopup()">SIM</button>
+        <button class="btn-nao" onclick="fecharPopup()">NÃO</button>
+    </div>
+
+    <script src="../js/popup.js"></script>
+
+</body>
+
+</html>
