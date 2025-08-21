@@ -1,4 +1,5 @@
-/* --------------------- Reset básico ---------------------*/
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,90 +8,118 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   color: #222;
   padding: 10px 15px;
-  font-size: 0.95rem;
   line-height: 1.4;
 }
 
-/*--------------------- Header --------------------- */
+/* Header */
 header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 10px 0;
-  font-size: 1rem;
-  color: #555;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1.4rem;
+  color: #444;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
 }
 
+header span {
+  user-select: none;
+}
+
+/* Títulos */
 .titulo {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 15px 0 5px;
+  margin: 20px 0 5px;
   color: #222;
 }
 
 .subtitulo {
   text-align: center;
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 25px;
 }
 
+/* Lista de exercícios */
 #lista-exercicios {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  width: 60vw;
-  margin: 0 auto;
+  gap: 16px;
 }
 
 .exercicio {
-  background-color: white;
-  border-radius: 10px;
-  padding: 12px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 14px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .exercicio:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
+/* Cabeçalho do exercício */
 .exercicio-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 500;
-  margin-bottom: 8px;
-  font-size: 0.85rem;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
 }
 
+/* Imagem / área de clique */
 .exercicio-img {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  height: 80px;
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: 50vh;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
-  color: #aaa;
-  cursor: pointer;
-  margin-bottom: 10px;
-  transition: background-color 0.3s;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-.exercicio-img:hover {
-  background-color: #ececec;
-}
-
+/* Rodapé do exercício */
 .exercicio-footer {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 400;
   color: #666;
+  margin-bottom: 8px;
+}
+
+/* Observações */
+.exercicio span {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.exercicio span p {
+  font-size: 0.8rem;
+  margin-left: 6px;
+  color: #777;
+}
+
+@media (min-width: 600px) {
+  body {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
