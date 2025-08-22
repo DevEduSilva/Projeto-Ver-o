@@ -1,6 +1,7 @@
 /* FOTOS DE QUARTA */
 .img1 {
-  background-image: url("../../imgs/wednesday/exercicio1.jpg");
+  background-image: url("../../imgs/wednesday/exercicio1.gif");
+  background-size: 34vh;
 }
 .img2 {
   background-image: url("../../imgs/wednesday/exercicio2.webp");
@@ -10,16 +11,16 @@
   background-size: 34vh;
 }
 .img4 {
-  background-image: url("../../imgs/wednesday/exercicio4.webp");
+  background-image: url("../../imgs/wednesday/exercicio4.gif");
   background-size: 34vh;
 }
 .img5 {
-  background-image: url("../../imgs/wednesday/exercicio5.webp");
+  background-image: url("../../imgs/wednesday/exercicio5.gif");
   background-size: 34vh;
 }
 .img6 {
-  background-image: url("../../imgs/wednesday/exercicio6.webp");
-  background-size: 35vh;
+  background-image: url("../../imgs/wednesday/exercicio6.gif");
+  background-size: 33vh;
 }
 
 .img7 {
