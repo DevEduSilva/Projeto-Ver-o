@@ -1,13 +1,15 @@
 /* FOTOS DE SEGUNDA */
 .img1 {
   background-image: url("../../imgs/monday/exercicio1.gif");
+  background-size: 32vh;
 }
 .img2 {
   background-image: url("../../imgs/monday/exercicio2.gif");
+  background-size: 30vh;
 }
 .img3 {
   background-image: url("../../imgs/monday/exercicio3.gif");
-  background-size: 34vh;
+  background-size: 31vh;
 }
 .img4 {
   background-image: url("../../imgs/monday/exercicio4.gif");
