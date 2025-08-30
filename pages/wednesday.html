@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../assets/css/components/popup.css">
     <link rel="stylesheet" href="../assets/css/pages/imgWednesday.css">
     <link rel="stylesheet" href="../assets/css/components/exercicesDone.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+
 
     <link rel="icon" type="image/png" href="../assets/imgs/common/favicon.ico">
 </head>
@@ -16,7 +18,11 @@
 <body>
 
     <header>
-        <span onclick="window.location.href='../index.html'">☰</span>
+        <span id="menu-btn">☰</span>
+        <div id="menu-opcoes" class="menu-opcoes">
+            <button id="toggle-imagens" onclick="toggleImagens()">Esconder imagens</button>
+            <button onclick="voltarInicio()">Voltar para tela inicial</button>
+        </div>
     </header>
 
     <div class="titulo">QUARTA-FEIRA</div>
@@ -40,6 +46,8 @@
         <button class="btn-sim" onclick="marcarFeito()">SIM</button>
         <button class="btn-nao" onclick="marcarDesfeito()">NÃO</button>
     </div>
+
+    <script src="../assets/js/components/header.js"></script>
 
     <script src="../assets/js/pages/exerciciosWednesday.js"></script>
 

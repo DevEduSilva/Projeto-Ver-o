@@ -15,21 +15,6 @@ body {
   user-select: none;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 12px 0;
-  font-size: 1.4rem;
-  color: #444;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-}
-
-header span {
-  user-select: none;
-}
 
 /* Títulos */
 .titulo {
