@@ -5,7 +5,8 @@
 }
 .img2 {
   background-image: url("../../imgs/wednesday/exercicio2.webp");
-}
+  background-size: 34vh;
+  }
 .img3 {
   background-image: url("../../imgs/wednesday/exercicio3.gif");
   background-size: 34vh;

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../assets/css/components/exercise.css">
     <link rel="stylesheet" href="../assets/css/components/popup.css">
     <link rel="stylesheet" href="../assets/css/pages/imgWednesday.css">
+    <link rel="stylesheet" href="../assets/css/components/exercicesDone.css">
 
     <link rel="icon" type="image/png" href="../assets/imgs/common/favicon.ico">
-
 </head>
 
 <body>
@@ -23,130 +23,25 @@
     <div class="subtitulo">COSTA, BICEPS E TRAPÉZIO</div>
 
     <div id="lista-exercicios">
-        <!-- Exercicio 1 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>PUXADA PELA FRENTE (ABERTA)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img1" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-                <p>Dropset na última série</p>
-            </span>
-        </div>
+        <!-- Os exercícios serão carregados aqui via JS -->
+    </div>
 
-        <!-- Exercicio 2 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>PUXADA PELA FRENTE (SUPINADA)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img2" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
+    <div class="menu-feitos">
+        <button onclick="toggleFeitos()">Exercícios Feitos</button>
+        <div id="lista-exercicios-feitos" style="display: none;">
+            <!-- Os exercícios feitos serão carregados aqui via JS apos confirmação -->
         </div>
-
-        <!-- Exercicio 3 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>REMADA SENTADO (SENTADO - NA POLIA)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img3" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 4 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>REMADA CAVALINHO</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img4" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 5 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>ROSCA (MARTELO)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img5" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 6 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>SCOTT (MAQUINA)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img6" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span></span>
-            </div>
-            <span>
-                <p>Carga Moderada</p>
-                <p>Controlar a descida</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 7 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>ESTEIRA</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img7" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Tempo: 20min</span>
-                <span></span>
-            </div>
-            <span>
-                <p></p>
-                <p></p>
-            </span>
-        </div>
-
     </div>
 
     <!-- Pop-up -->
     <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
     <div class="popup" id="popup">
         <p>FEZ O EXERCÍCIO?</p>
-        <button class="btn-sim" onclick="fecharPopup()">SIM</button>
-        <button class="btn-nao" onclick="fecharPopup()">NÃO</button>
+        <button class="btn-sim" onclick="marcarFeito()">SIM</button>
+        <button class="btn-nao" onclick="marcarDesfeito()">NÃO</button>
     </div>
+
+    <script src="../assets/js/pages/exerciciosWednesday.js"></script>
 
     <script src="../assets/js/popup.js"></script>
 

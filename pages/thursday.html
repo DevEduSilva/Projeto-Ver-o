@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/components/exercise.css">
     <link rel="stylesheet" href="../assets/css/components/popup.css">
     <link rel="stylesheet" href="../assets/css/pages/imgthursday.css">
+    <link rel="stylesheet" href="../assets/css/components/exercicesDone.css">
 
     <link rel="icon" type="image/png" href="../assets/imgs/common/favicon.ico">
 
@@ -23,145 +24,25 @@
     <div class="subtitulo">MEMBROS INFERIORES 2 </div>
 
     <div id="lista-exercicios">
+        <!-- Os exercícios serão carregados aqui via JS -->
+    </div>
 
-        <!-- Exercicio 1 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>AGACHAMENTO (SMITH)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img8" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span></span>
-            </div>
-            <span>
-                <p>Carga Moderada</p>
-            </span>
+    <div class="menu-feitos">
+        <button onclick="toggleFeitos()">Exercícios Feitos</button>
+        <div id="lista-exercicios-feitos" style="display: none;">
+            <!-- Os exercícios feitos serão carregados aqui via JS apos confirmação -->
         </div>
-
-        <!-- Exercicio 2 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>CADEIRA EXTENSORA</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img1" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 4 x MAX </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>DROP-SET (DIMINUINDO CARGA)</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 3 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>AGACHAMENTO HACK (VERTICAL)</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img2" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-                <p>Progressão leve</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 4 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>LEG 45</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img3" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 5 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>CADEIRA FLEXORA</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img4" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 4 x MAX </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>DROP-SET (DIMINUINDO CARGA)</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 6 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>CADEIRA ABDUTORA</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img5" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x 12 </span>
-                <span>VERIFICAR PESO</span>
-            </div>
-            <span>Obs:
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 7 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>CADEIRA ADUTORA</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img7" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 4 x MAX </span>
-                <span></span>
-            </div>
-            <span>
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
-        <!-- Exercicio 8 -->
-        <div class="exercicio">
-            <div class="exercicio-header">
-                <span>PANTURRILHA SENTADO</span>
-                <span style="color:red;">FAZER</span>
-            </div>
-            <div class="exercicio-img img6" onclick="abrirPopup()"></div>
-            <div class="exercicio-footer">
-                <span>Ser: 3 x MAX </span>
-                <span></span>
-            </div>
-            <span>
-                <p>Carga Moderada</p>
-            </span>
-        </div>
-
     </div>
 
     <!-- Pop-up -->
     <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
     <div class="popup" id="popup">
         <p>FEZ O EXERCÍCIO?</p>
-        <button class="btn-sim" onclick="fecharPopup()">SIM</button>
-        <button class="btn-nao" onclick="fecharPopup()">NÃO</button>
+        <button class="btn-sim" onclick="marcarFeito()">SIM</button>
+        <button class="btn-nao" onclick="marcarDesfeito()">NÃO</button>
     </div>
+
+    <script src="../assets/js/pages/exerciciosThurdays.js"></script>
 
     <script src="../assets/js/popup.js"></script>
 

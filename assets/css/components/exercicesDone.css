@@ -1,0 +1,46 @@
+/* Container do menu */
+.menu-feitos {
+  position: fixed; /* Fica fixo na tela */
+  bottom: 20px; /* Distância da parte inferior */
+  right: 20px; /* Distância da lateral direita */
+  background-color: #fff; /* Fundo branco */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  width: 200px; /* Largura fixa */
+}
+
+/* Botão do menu */
+.menu-feitos > button {
+  width: 100%;
+  padding: 8px;
+  background-color: #4caf50; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-feitos > button:hover {
+  background-color: #45a049;
+}
+
+/* Lista de exercícios feitos */
+#lista-exercicios-feitos {
+  margin-top: 10px;
+  max-height: 200px; /* Altura máxima com scroll */
+  overflow-y: auto;
+  display: none; /* Começa retraído */
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+
+/* Cada exercício feito */
+#lista-exercicios-feitos .exercicio {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
