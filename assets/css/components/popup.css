@@ -1,3 +1,4 @@
+/* Overlay do popup */
 .overlay {
   display: none;
   position: fixed;
@@ -9,6 +10,7 @@
   z-index: 10;
 }
 
+/* Container do popup */
 .popup {
   display: none;
   position: fixed;
@@ -17,7 +19,8 @@
   transform: translate(-50%, -50%);
   background: white;
   width: 90%;
-  max-width: 400px;
+  max-width: 350px;
+  min-width: 250px;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -25,6 +28,7 @@
   z-index: 20;
 }
 
+/* Título e texto */
 .popup h3 {
   margin-bottom: 10px;
   font-size: 1.1rem;
@@ -37,6 +41,7 @@
   color: #666;
 }
 
+/* Botões */
 .btn-sim,
 .btn-nao {
   padding: 8px 14px;
@@ -45,6 +50,7 @@
   cursor: pointer;
   margin: 0 5px;
   font-size: 0.85rem;
+  transition: background-color 0.25s;
 }
 
 .btn-sim {
@@ -52,7 +58,15 @@
   color: white;
 }
 
+.btn-sim:hover {
+  background-color: #45a049;
+}
+
 .btn-nao {
   background-color: #f44336;
   color: white;
+}
+
+.btn-nao:hover {
+  background-color: #e53935;
 }
