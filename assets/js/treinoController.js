@@ -104,6 +104,14 @@ function marcarFeito() {
 
   fecharPopup();
   atualizarMenuFeitos();
+
+  // ✅ Check se todos exercícios foram feitos
+  if (checarTodosFeitos()) {
+    setTimeout(() => {
+      alert("🎉 Parabéns! Você concluiu todos os exercícios!");
+      window.location.href = "../index.html"; // ou ajuste o caminho conforme necessário
+    }, 300); // Pequena pausa para permitir o update visual
+  }
 }
 
 // Desmarcar exercício feito
@@ -155,11 +163,10 @@ function toggleFeitos() {
     window.getComputedStyle(listaFeitos).display === "none" ? "block" : "none";
 }
 
-// Confirma sair/recarregar
-window.addEventListener("beforeunload", (e) => {
-  const listaFeitos = document.getElementById("lista-exercicios-feitos");
-  if (listaFeitos.children.length > 0) {
-    e.preventDefault();
-    e.returnValue = "";
-  }
-});
+function checarTodosFeitos() {
+  const todosExercicios = document.querySelectorAll(
+    "#lista-exercicios .exercicio"
+  );
+  return todosExercicios.length === 0; // Se não sobrou nenhum na lista normal
+}
+
