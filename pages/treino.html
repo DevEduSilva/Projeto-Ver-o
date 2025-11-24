@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>BRAÇO E TRICEPS</title>
-    
+    <title>Treino</title>
+
     <link rel="stylesheet" href="../assets/css/components/exercise.css">
     <link rel="stylesheet" href="../assets/css/components/popup.css">
     <link rel="stylesheet" href="../assets/css/components/exercicesDone.css">
@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <span id="menu-btn">☰</span>
         <div id="menu-opcoes" class="menu-opcoes">
@@ -24,21 +26,24 @@
         </div>
     </header>
 
-    <div class="titulo">BRAÇO E TRICEPS</div>
-    <div class="subtitulo">Treino básico com foco em membros superiores!</div>
+    <!-- TÍTULO E SUBTÍTULO DINÂMICOS -->
+    <div class="titulo" id="tituloTreino"></div>
+    <div class="subtitulo" id="subtituloTreino"></div>
 
+    <!-- LISTA DE EXERCÍCIOS -->
     <div id="lista-exercicios">
-        <!-- Os exercícios serão carregados aqui via JS -->
+        <!-- Carregado via JS -->
     </div>
 
+    <!-- EXERCÍCIOS FEITOS -->
     <div class="menu-feitos">
         <button onclick="toggleFeitos()">Exercícios Feitos</button>
         <div id="lista-exercicios-feitos" style="display: none;">
-            <!-- Os exercícios feitos serão carregados aqui via JS apos confirmação -->
+            <!-- Carregado via JS -->
         </div>
     </div>
 
-    <!-- Pop-up -->
+    <!-- POPUP -->
     <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
     <div class="popup" id="popup">
         <p>FEZ O EXERCÍCIO?</p>
@@ -46,11 +51,10 @@
         <button class="btn-nao" onclick="marcarDesfeito()">NÃO</button>
     </div>
 
+    <!-- SCRIPTS -->
+    <script src="/assets/js/pages/treinos.js"></script>
     <script src="../assets/js/components/header.js"></script>
-    <script src="../assets/js/pages/exerciciosB.js"></script>
-
-    <script src="../assets/js/popup.js"></script>
-
+    <script src="../assets/js/treinoController.js"></script>
 </body>
 
 </html>
