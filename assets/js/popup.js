@@ -28,16 +28,6 @@ function carregarExercicios() {
         footer.innerHTML = `<span>Ser: ${ex.repeticoes}</span><span>${ex.verificarPeso}</span>`;
         divEx.appendChild(footer);
 
-        // Observações
-        const obs = document.createElement("span");
-        obs.textContent = "Obs:";
-        ex.obs.forEach(o => {
-            const p = document.createElement("p");
-            p.textContent = o;
-            obs.appendChild(p);
-        });
-        divEx.appendChild(obs);
-
         lista.appendChild(divEx);
     });
 }

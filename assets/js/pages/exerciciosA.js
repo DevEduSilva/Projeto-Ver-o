@@ -1,3 +1,7 @@
+//  ======================
+// PEITO E COSTAS
+//  ======================
+
 const exercicios = [
   {
     id: 1,
@@ -6,7 +10,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "20kg",
-    obs: ["Carga Moderada", "Dropset na última série"],
     imgClass: "img3-1",
   },
   {
@@ -16,7 +19,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "30kg",
-    obs: ["Carga Moderada"],
     imgClass: "img3-2",
   },
   {
@@ -26,7 +28,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "30kg",
-    obs: ["Carga Moderada"],
     imgClass: "img3-3",
   },
   {
@@ -36,8 +37,7 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "6kg",
-    obs: ["Carga Moderada"],
-    imgClass: "img3-5",
+    imgClass: "img3-4",
   },
   {
     id: 5,
@@ -46,8 +46,7 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "30kg",
-    obs: ["Carga Moderada", "Controlar a descida"],
-    imgClass: "img3-6",
+    imgClass: "img3-5",
   },
   {
     id: 6,
@@ -56,7 +55,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "Tempo: 20min",
     verificarPeso: "",
-    obs: [],
-    imgClass: "img3-7",
+    imgClass: "img3-6",
   },
 ];

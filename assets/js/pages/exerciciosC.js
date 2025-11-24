@@ -1,3 +1,8 @@
+
+//  ======================
+// COXA E PANTURRILHA
+//  ======================
+
 const exercicios = [
   {
     id: 1,
@@ -6,7 +11,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 15",
     verificarPeso: "50kg",
-    obs: ["Carga Moderada", "1' ISOMÉTRICO/REP (MANTER POR UM TEMPO)"],
     imgClass: "img2-1",
   },
   {
@@ -16,7 +20,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 15",
     verificarPeso: "20kg cada lado",
-    obs: ["Carga Moderada", "Progressão leve"],
     imgClass: "img2-2",
   },
   {
@@ -26,7 +29,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "20kg cada lado",
-    obs: ["Carga Moderada"],
     imgClass: "img2-3",
   },
   {
@@ -36,7 +38,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "VERIFICAR PESO",
-    obs: ["Carga Moderada"],
     imgClass: "img2-4",
   },
   {
@@ -46,7 +47,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x 12",
     verificarPeso: "45kg",
-    obs: ["Carga Moderada"],
     imgClass: "img2-5",
   },
   {
@@ -56,7 +56,6 @@ const exercicios = [
     corStatus: "red",
     repeticoes: "3 x MAX",
     verificarPeso: "90kg",
-    obs: ["Carga Moderada"],
     imgClass: "img2-6",
   },
 ];

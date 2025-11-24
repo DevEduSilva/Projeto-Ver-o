@@ -1,4 +1,8 @@
-/* RETORNO VISUAL DO TREINO REFERENTE À SEGUNDA */
+/* 
+ ======================
+ BRAÇO E TRICEPS
+ ======================
+ */
 .img1-1 {
   background-image: url("../../imgs/workouts/exercicio1-1.gif");
   background-size: 32vh;
@@ -13,11 +17,11 @@
 }
 .img1-4 {
   background-image: url("../../imgs/workouts/exercicio1-4.gif");
-  background-size: 34vh;
+  background-size: 30vh;
 }
 .img1-5 {
   background-image: url("../../imgs/workouts/exercicio1-5.gif");
-  background-size: 34vh;
+  background-size: 32vh;
 }
 .img1-6 {
   background-image: url("../../imgs/workouts/exercicio1-6.gif");
@@ -25,11 +29,16 @@
 }
 
 .img1-7 {
-  background-image: url("../../imgs/workouts/exercicio1-7.jpg");
-  background-size: 35vh;
+  background-image: url("../../imgs/workouts/exercicio1-7.gif");
+  background-size: 32vh;
 }
 
-/* RETORNO VISUAL DO TREINO REFERENTE À TERÇA */
+/* 
+ ======================
+COXA E PANTURRILHA
+ ======================
+ */
+
 .img2-1 {
   background-image: url("../../imgs/workouts/exercicio2-1.gif");
   background-size: 34vh;
@@ -52,18 +61,22 @@
 }
 .img2-6 {
   background-image: url("../../imgs/workouts/exercicio2-6.gif");
-  background-size: 32vh;
+  background-size: 40vh;
 }
 
-/* RETORNO VISUAL DO TREINO REFERENTE À QUARTA */
+/* 
+ ======================
+PEITO E COSTAS
+ ======================
+ */
 .img3-1 {
   background-image: url("../../imgs/workouts/exercicio3-1.gif");
   background-size: 34vh;
 }
 .img3-2 {
-  background-image: url("../../imgs/workouts/exercicio3-2.webp");
+  background-image: url("../../imgs/workouts/exercicio3-2.gif");
   background-size: 34vh;
-  }
+}
 .img3-3 {
   background-image: url("../../imgs/workouts/exercicio3-3.gif");
   background-size: 34vh;
@@ -74,11 +87,11 @@
 }
 .img3-5 {
   background-image: url("../../imgs/workouts/exercicio3-5.gif");
-  background-size: 34vh;
+  background-size: 32vh;
 }
 .img3-6 {
-  background-image: url("../../imgs/workouts/exercicio3-6.gif");
-  background-size: 33vh;
+  background-image: url("../../imgs/workouts/exercicio3-6.jpg");
+  background-size: 20vh;
 }
 
 .img3-7 {
@@ -86,7 +99,12 @@
   background-size: 22vh;
 }
 
-/* RETORNO VISUAL DO TREINO REFERENTE À QUINTA */
+/* 
+ ======================
+COXA, GLÚTEOS E PANTURRILHA
+ ======================
+ */
+
 .img4-1 {
   background-image: url("../../imgs/workouts/exercicio4-1.gif");
   background-size: 34vh;
@@ -95,30 +113,7 @@
   background-image: url("../../imgs/workouts/exercicio4-2.gif");
   background-size: 34vh;
 }
-.img4-3 {
-  background-image: url("../../imgs/workouts/exercicio4-3.gif");
-  background-size: 34vh;
-}
-.img4-4 {
-  background-image: url("../../imgs/workouts/exercicio4-4-gif");
-  background-size: 34vh;
-}
 .img4-5 {
   background-image: url("../../imgs/workouts/exercicio4-5.gif");
-  background-size: 30vh;
+  background-size: 34vh;
 }
-.img4-6 {
-  background-image: url("../../imgs/workouts/exercicio4-6.gif");
-  background-size: 32vh;
-}
-
-.img4-7 {
-  background-image: url("../../imgs/workouts/exercicio4-7.gif");
-  background-size: 32vh;
-}
-
-.img4-8 {
-  background-image: url("../../imgs/workouts/exercicio4-8.gif");
-  background-size: 32vh;
-}
-
