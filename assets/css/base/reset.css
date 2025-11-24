@@ -73,7 +73,7 @@ body {
 /* Tablets */
 @media (max-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
   .title {
     font-size: 1.3rem;
